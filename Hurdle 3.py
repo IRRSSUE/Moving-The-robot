@@ -26,8 +26,7 @@ def situation():
 
 
 while not at_goal():
-    while wall_in_front():
+    if wall_in_front():
         situation()
-    if front_is_clear():
+    else: 
         move()
-    move()
